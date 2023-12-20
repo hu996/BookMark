@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(245, 230, 209,60%);
+}
+.bm-head{
+    border-bottom: 1px dashed;
+  
+}
+
+.contnt{
+   border-bottom: 1px dashed;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.book{
+   color: rgb(155, 180, 134);
+}
+ .marked{
+    /* position: relative; */
+    /* background-color: red; */
+    width:fit-content;
+    font-family:'Dancing Script', cur ;
+    font-size: 60px;
+    
+    
+ 
+ }
+
+ .marked::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(240, 194, 134);
+    bottom:0%;
+    left: 0;
+    z-index: -1;
+    transition: .8s;
+ }
+ .marked:hover::after{
+    height: 70%;
+ }
+
+ input:focus{
+   box-shadow: 0 0 0 0.25rem rgba(233, 153, 32, 0.25) !important;
+}
+
+#total{
+   padding: 2px 8px;
+   width: fit-content;
+   border: 1px solid;
+   font-weight: bold;
+}
+
+
+.tx{
+   overflow-x: auto;
+   width:100%;
+   height:350px;
+}
